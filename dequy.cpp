@@ -27,5 +27,35 @@ Danh mục có dạng cây:
  │    └── iOS
  └── Laptop
 Yêu cầu: in toàn bộ danh mục.
+cau truc:
+category
+    name:String
+    children: List<category>
+printCategory(category,level):
+    print(level+category.name)
+    for(child:category.children)
+        print(child,level+1)
+9. Giải bài toán menu nhiều cấp (app / web)
+Bài toán
+Menu dạng:
+Trang chủ
+Sản phẩm
+ ├── Thời trang
+ └── Điện tử
+Giỏ hàng
 
-void print(level)
+web:
+ name:String
+ children:List<web>
+
+
+
+
+10. Bài tập tổng hợp (thực tế + thuật toán)
+Bài toán
+Cho cây tổ chức công ty:
+Mỗi nhân viên có thể quản lý nhiều nhân viên khác
+Mỗi người có lương
+👉 Tính tổng lương của một phòng ban
+
+        
